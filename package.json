@@ -1,0 +1,36 @@
+{
+    "name": "create-lyder",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Easily scaffold a new Lyder project with Vite.",
+    "bin": {
+        "create-lyder": "dist/index.js"
+    },
+    "engines": {
+        "node": ">=v18.3.0"
+    },
+    "scripts": {
+        "prepack": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fahmed10/create-lyder.git"
+    },
+    "author": "Fareed Ahmed",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fahmed10/create-lyder/issues"
+    },
+    "homepage": "https://github.com/fahmed10/create-lyder#readme",
+    "devDependencies": {
+        "@types/node": "^22.13.16",
+        "typescript": "^5.8.2",
+        "mri": "^1.2.0",
+        "picocolors": "^1.1.1",
+        "@clack/prompts": "^0.10.0"
+    },
+    "files": [
+        "dist",
+        "templates"
+    ]
+}
