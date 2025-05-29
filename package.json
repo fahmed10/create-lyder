@@ -1,6 +1,6 @@
 {
     "name": "create-lyder",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "description": "Easily scaffold a new Lyder project with Vite.",
     "bin": {
@@ -24,7 +24,9 @@
     "homepage": "https://github.com/fahmed10/create-lyder#readme",
     "devDependencies": {
         "@types/node": "^22.13.16",
-        "typescript": "^5.8.2",
+        "typescript": "^5.8.2"
+    },
+    "dependencies": {
         "mri": "^1.2.0",
         "picocolors": "^1.1.1",
         "@clack/prompts": "^0.10.0"
