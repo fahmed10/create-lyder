@@ -28,16 +28,20 @@ if ("help" in args) {
     process.exit(0);
 }
 
-const directory = await skipIfArgumentPassed(args, "dir", () => text({
+let directory = await skipIfArgumentPassed(args, "dir", () => text({
     message: "Where do you want to create the project?",
-    placeholder: "(current directory)",
+    placeholder: "<current directory>",
     defaultValue: ".",
     validate(value) {
-        if (!isValidDirectoryName(value)) {
+        if (value !== "<current directory>" && !isValidDirectoryName(value)) {
             return "Invalid directory name.";
         }
     },
 })).then(exitOnCancel).then(trimInput);
+
+if (directory === "<current directory>") {
+    directory = ".";
+}
 
 const dirExists = fs.existsSync(directory);
 

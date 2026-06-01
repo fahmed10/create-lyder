@@ -1,6 +1,6 @@
 {
     "name": "create-lyder",
-    "version": "1.0.1",
+    "version": "1.0.4",
     "type": "module",
     "description": "Easily scaffold a new Lyder project with Vite.",
     "bin": {
